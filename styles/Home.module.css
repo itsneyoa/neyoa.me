@@ -1,11 +1,11 @@
 .container {
+  color: #eaeaea;
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .main {
@@ -17,37 +17,21 @@
   align-items: center;
 }
 
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 4em;
+}
+
+.title span {
+  color: #f53678;
+  text-decoration: none;
+  transition: all 1.5s ease;
+}
+
+.title span:hover {
+  color: #0fc0fc;
+  transition: all 1.5s ease;
 }
 
 .title,
@@ -56,66 +40,115 @@
 }
 
 .description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+  line-height: 1;
+  font-size: 1.5em;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.icons {
+  margin-top: 5%;
+  font-size: 3em;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
+  justify-content: center;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
+.icon {
+  position: relative;
+  display: inline-block;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.icon .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background: #2c2f33;
+  color: #efefef;
+  text-align: center;
+  font-size: 0.35em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  width: auto;
+  position: absolute;
+  bottom: 120%;
+  margin: auto -3.5em;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.icon:hover .tooltip {
+  visibility: visible;
+  transition: all 0.4s ease;
+  opacity: 1;
 }
 
-.card p {
+.icon:not(:hover) .tooltip {
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.contacts {
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  line-height: 1;
+  font-size: 1.5em;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.contact {
+  color: #ccff00;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.contact:hover {
+  color: #0fc0fc;
+  transition: all 0.5s ease;
+}
+
+.contact .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background: #2c2f33;
+  color: #efefef;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  width: auto;
+  position: absolute;
+  bottom: 120%;
+  margin: auto -3.5em;
+}
+
+.tooltip:hover {
+  color: #2c2f33;
+  background: #50e3c2;
+}
+
+.contact:hover .tooltip {
+  visibility: visible;
+  transition: all 0.4s ease;
+  opacity: 1;
+}
+
+.contact:not(:hover) .tooltip {
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+#tsparticles {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
