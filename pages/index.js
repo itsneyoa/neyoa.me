@@ -10,7 +10,7 @@ export default function Home() {
     <div id="container" onContextMenu={(e) => e.preventDefault()}>
       <Head>
         <title>neyoa</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css"></link>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"></link>
         <link rel="manifest" href="/manifest.json" />
       </Head>
 
@@ -33,7 +33,7 @@ export default function Home() {
             <i className="devicon-csharp-line-wordmark" /><span className="tooltip">C#</span>
           </span>
           <span className="group icon">
-            <i className="devicon-digitalocean-plain" /><span className="tooltip">DigitalOcean</span>
+            <i class="devicon-docker-plain" /><span className="tooltip">Docker</span>
           </span>
           <span className="group icon">
             <i className="devicon-git-plain" /><span className="tooltip">Git</span>
@@ -48,10 +48,13 @@ export default function Home() {
             <i className="devicon-nodejs-plain" /><span className="tooltip">Node.js</span>
           </span>
           <span className="group icon">
-            <i className="devicon-javascript-plain" /><span className="tooltip">JavaScript</span>
+            <i class="devicon-tailwindcss-plain" /><spam className="tooltip">tailwindcss</spam>
           </span>
           <span className="group icon">
-            <i className="devicon-ubuntu-plain" /><span className="tooltip">Ubuntu</span>
+            <i class="devicon-typescript-plain" /><span className="tooltip">TypeScript</span>
+          </span>
+          <span className="group icon">
+            <i className="devicon-javascript-plain" /><span className="tooltip">JavaScript</span>
           </span>
           <span className="group icon">
             <i className="devicon-yarn-plain" /><span className="tooltip">Yarn</span>
