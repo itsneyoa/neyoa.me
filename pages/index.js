@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <title>neyoa</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css"></link>
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
 
       <Particles options={particlesOptions} />
