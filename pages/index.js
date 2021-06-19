@@ -22,7 +22,7 @@ export default function Home() {
         </h1>
 
         <p className="mt-3 text-2xl">
-          <Image src={rainbowcrystalheart} width="20" height="20" /> Happy pride!!! <Image src={transcrystalheart} width="20" height="20" /> {/* if you read this you're a cutie <3 */}
+          <Image src={rainbowcrystalheart} width="20" height="20" alt="Rainbow Crystal Heart" /> Happy pride!!! <Image src={transcrystalheart} width="20" height="20" alt="Trans Flag Crystal Heart" /> {/* if you read this you're a cutie <3 */}
         </p>
 
         <p className="icons mt-14 text-5xl">
@@ -33,7 +33,7 @@ export default function Home() {
             <i className="devicon-csharp-line-wordmark" /><span className="tooltip">C#</span>
           </span>
           <span className="group icon">
-            <i class="devicon-docker-plain" /><span className="tooltip">Docker</span>
+            <i className="devicon-docker-plain" /><span className="tooltip">Docker</span>
           </span>
           <span className="group icon">
             <i className="devicon-git-plain" /><span className="tooltip">Git</span>
@@ -48,10 +48,10 @@ export default function Home() {
             <i className="devicon-nodejs-plain" /><span className="tooltip">Node.js</span>
           </span>
           <span className="group icon">
-            <i class="devicon-tailwindcss-plain" /><spam className="tooltip">tailwindcss</spam>
+            <i className="devicon-tailwindcss-plain" /><spam className="tooltip">tailwindcss</spam>
           </span>
           <span className="group icon">
-            <i class="devicon-typescript-plain" /><span className="tooltip">TypeScript</span>
+            <i className="devicon-typescript-plain" /><span className="tooltip">TypeScript</span>
           </span>
           <span className="group icon">
             <i className="devicon-javascript-plain" /><span className="tooltip">JavaScript</span>
