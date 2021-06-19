@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #container {
+    @apply flex flex-col items-center justify-center min-h-screen py-2 bg-light-background dark:bg-dark-background z-0 select-none;
+  }
+
+  #main {
+    @apply flex flex-col items-center justify-center w-full flex-1 px-20 text-center text-light-text dark:text-dark-text z-20;
+  }
+
+  .icons {
+    @apply flex flex-row flex-wrap justify-center;
+  }
+
+  .icons .icon {
+    @apply relative px-4 flex justify-center items-center;
+  }
+
+  .contact {
+    @apply text-light-contact dark:text-dark-contact relative inline-flex justify-center items-center;
+  }
+
+  .tooltip {
+    @apply invisible opacity-0 bg-light-tooltip-background dark:bg-dark-tooltip-background text-light-text dark:text-dark-text rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip m-tooltip group-hover:opacity-100 group-hover:visible duration-500 hover:bg-tooltip-background hover:text-dark-tooltip-background;
+  }
+}
