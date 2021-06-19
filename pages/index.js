@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Image from 'next/image'
+import rainbowcrystalheart from '../public/rainbowcrystalheart.gif'
+import transcrystalheart from '../public/transcrystalheart.gif'
 import Particles from "react-tsparticles";
 import particlesOptions from '../styles/particles.json'
 
@@ -20,7 +22,7 @@ export default function Home() {
         </h1>
 
         <p className="mt-3 text-2xl">
-          bottom text {/* if you read this you're a cutie <3 */}
+          <Image src={rainbowcrystalheart} width="20" height="20" /> Happy pride!!! <Image src={transcrystalheart} width="20" height="20" /> {/* if you read this you're a cutie <3 */}
         </p>
 
         <p className="mt-12 text-5xl flex flex-row flex-wrap justify-center">
