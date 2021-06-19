@@ -5,61 +5,61 @@ import particlesOptions from '../styles/particles.json'
 
 export default function Home() {
   return (
-    <div className={styles.container} onContextMenu={(e) => e.preventDefault()}>
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-light-background dark:bg-dark-background z-0 select-none" onContextMenu={(e) => e.preventDefault()}>
       <Head>
         <title>neyoa</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css"></link>
         <link rel="manifest" href="/manifest.json" />
       </Head>
 
-      <Particles options={particlesOptions} />
+      <Particles options={particlesOptions} className="z-10" />
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Hi! I'm <span>neyoa</span>
+      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center text-light-text dark:text-dark-text z-20">
+        <h1 className="text-6xl font-bold leading-tight">
+          Hi! I'm <span className="text-primary">neyoa</span>
         </h1>
 
-        <p className={styles.description}>
-          bottom text {/* finish writing this */}
+        <p className="mt-3 text-2xl">
+          bottom text {/* if you read this you're a cutie <3 */}
         </p>
 
-        <p className={styles.icons}>
-          <span className={styles.icon}>
-            <i className="devicon-apache-plain"></i><span className={styles.tooltip}>Apache</span>
+        <p className="mt-12 text-5xl flex flex-row flex-wrap justify-center">
+          <span className="group relative px-4 inline-block justify-center items-center">
+            <i className="devicon-apache-plain" /><span className="opacity-0 bg-light-tooltip dark:bg-dark-tooltip rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip m-tooltip group-hover:opacity-100">Apache</span>
+          </span >
+          <span className="group relative px-4 inline-block justify-center items-center">
+            <i className="devicon-csharp-line-wordmark" /><span className="opacity-0 bg-light-tooltip dark:bg-dark-tooltip rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip m-tooltip group-hover:opacity-100">C#</span>
           </span>
-          <span className={styles.icon}>
-            <i className="devicon-csharp-line-wordmark"></i><span className={styles.tooltip}>C#</span>
+          <span className="group relative px-4 inline-block justify-center items-center">
+            <i className="devicon-digitalocean-plain" /><span className="opacity-0 bg-light-tooltip dark:bg-dark-tooltip rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip m-tooltip group-hover:opacity-100">DigitalOcean</span>
           </span>
-          <span className={styles.icon}>
-            <i className="devicon-digitalocean-plain"></i><span className={styles.tooltip}>DigitalOcean</span>
+          <span className="group relative px-4 inline-block justify-center items-center">
+            <i className="devicon-git-plain" /><span className="opacity-0 bg-light-tooltip dark:bg-dark-tooltip rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip m-tooltip group-hover:opacity-100">Git</span>
           </span>
-          <span className={styles.icon}>
-            <i className="devicon-git-plain"></i><span className={styles.tooltip}>Git</span>
+          <span className="group relative px-4 inline-block justify-center items-center">
+            <i className="devicon-github-original" /><span className="opacity-0 bg-light-tooltip dark:bg-dark-tooltip rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip m-tooltip group-hover:opacity-100">GitHub</span>
           </span>
-          <span className={styles.icon}>
-            <i className="devicon-github-original"></i><span className={styles.tooltip}>GitHub</span>
+          <span className="group relative px-4 inline-block justify-center items-center">
+            <i className="devicon-nextjs-plain" /><span className="opacity-0 bg-light-tooltip dark:bg-dark-tooltip rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip m-tooltip group-hover:opacity-100">Next.js</span>
           </span>
-          <span className={styles.icon}>
-            <i className="devicon-nextjs-plain"></i><span className={styles.tooltip}>Next.js</span>
+          <span className="group relative px-4 inline-block justify-center items-center">
+            <i className="devicon-nodejs-plain" /><span className="opacity-0 bg-light-tooltip dark:bg-dark-tooltip rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip m-tooltip group-hover:opacity-100">Node.js</span>
           </span>
-          <span className={styles.icon}>
-            <i className="devicon-nodejs-plain"></i><span className={styles.tooltip}>Node.js</span>
+          <span className="group relative px-4 inline-block justify-center items-center">
+            <i className="devicon-javascript-plain" /><span className="opacity-0 bg-light-tooltip dark:bg-dark-tooltip rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip m-tooltip group-hover:opacity-100">JavaScript</span>
           </span>
-          <span className={styles.icon}>
-            <i className="devicon-javascript-plain"></i><span className={styles.tooltip}>JavaScript</span>
+          <span className="group relative px-4 inline-block justify-center items-center">
+            <i className="devicon-ubuntu-plain" /><span className="opacity-0 bg-light-tooltip dark:bg-dark-tooltip rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip m-tooltip group-hover:opacity-100">Ubuntu</span>
           </span>
-          <span className={styles.icon}>
-            <i className="devicon-ubuntu-plain"></i><span className={styles.tooltip}>Ubuntu</span>
+          <span className="group relative px-4 inline-block justify-center items-center">
+            <i className="devicon-yarn-plain" /><span className="opacity-0 bg-light-tooltip dark:bg-dark-tooltip rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip m-tooltip group-hover:opacity-100">Yarn</span>
           </span>
-          <span className={styles.icon}>
-            <i className="devicon-yarn-plain"></i><span className={styles.tooltip}>Yarn</span>
-          </span>
-        </p>
+        </p >
 
-        <p className={styles.contacts}>
-          See my work on <a href="https://github.com/itsneyoa" target="_blank" rel="noreferrer" className={styles.contact}>GitHub<span className={styles.tooltip}>itsneyoa</span></a> or contact me via <a href="mailto:hello@neyoa.me" className={styles.contact}>email<span className={styles.tooltip}>hello@neyoa.me</span></a> or <span className={styles.contact}>Discord<span className={styles.tooltip}>neyoa#1572</span></span>.
+        <p className="m-0 leading-none text-2xl mt-10">
+          See my work on <a href="https://github.com/itsneyoa" target="_blank" rel="noreferrer" className="group text-tertiary relative inline-flex justify-center items-center">GitHub<span className="opacity-0 text-light-text dark:text-dark-text bg-light-tooltip dark:bg-dark-tooltip rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip m-tooltip group-hover:opacity-100">itsneyoa</span></a> or contact me via <a href="mailto:hello@neyoa.me" className="group text-tertiary relative inline-flex justify-center items-center">email<span className="opacity-0 text-light-text dark:text-dark-text bg-light-tooltip dark:bg-dark-tooltip rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip m-tooltip group-hover:opacity-100">hello@neyoa.me</span></a> or <span className="group text-tertiary relative inline-flex justify-center items-center">Discord<span className="opacity-0 text-light-text dark:text-dark-text bg-light-tooltip dark:bg-dark-tooltip rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip m-tooltip group-hover:opacity-100">neyoa#1572</span></span>.
         </p>
-      </main>
-    </div>
+      </main >
+    </div >
   )
 }

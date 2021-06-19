@@ -63,7 +63,7 @@
   align-items: center;
 }
 
-.icon .tooltip {
+.tooltip {
   visibility: hidden;
   opacity: 0;
   background: #2c2f33;
