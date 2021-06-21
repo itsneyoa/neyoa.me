@@ -20,10 +20,10 @@
   }
 
   .contact {
-    @apply text-light-contact dark:text-dark-contact relative inline-flex justify-center items-center;
+    @apply bg-gradient-to-br bg-clip-text text-transparent from-contact-start to-contact-end relative inline-flex justify-center items-center;
   }
 
   .tooltip {
-    @apply invisible opacity-0 bg-light-tooltip-background dark:bg-dark-tooltip-background text-light-text dark:text-dark-text rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip m-tooltip group-hover:opacity-100 group-hover:visible duration-500 hover:bg-tooltip-background hover:text-dark-tooltip-background;
+    @apply invisible opacity-0 bg-light-tooltip-background dark:bg-dark-tooltip-background text-light-text dark:text-dark-text rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip group-hover:opacity-100 group-hover:visible duration-500 hover:bg-tooltip-background hover:text-dark-tooltip-background;
   }
 }

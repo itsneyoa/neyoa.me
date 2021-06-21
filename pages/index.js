@@ -48,7 +48,7 @@ export default function Home() {
             <i className="devicon-nodejs-plain" /><span className="tooltip">Node.js</span>
           </span>
           <span className="group icon">
-            <i className="devicon-tailwindcss-plain" /><spam className="tooltip">tailwindcss</spam>
+            <i className="devicon-tailwindcss-plain" /><spam className="tooltip">TailwindCSS</spam>
           </span>
           <span className="group icon">
             <i className="devicon-typescript-plain" /><span className="tooltip">TypeScript</span>
