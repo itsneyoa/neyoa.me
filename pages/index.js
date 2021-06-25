@@ -18,7 +18,7 @@ export default function Home() {
 
       <main id="main">
         <h1 className="text-6xl font-bold leading-tight">
-          Hi! I'm <span className="text-primary hover:text-secondary duration-1500">neyoa</span>
+          Hi! I'm <span className="text-primary hover:text-secondary duration-1500">Lily</span>
         </h1>
 
         <p className="mt-3 text-2xl">
@@ -62,7 +62,7 @@ export default function Home() {
         </p >
 
         <p className="mt-14 text-2xl">
-          See my work on <a href="https://github.com/itsneyoa" target="_blank" rel="noreferrer" className="group contact">GitHub<span className="tooltip">itsneyoa</span></a> or contact me via <a href="mailto:hello@neyoa.me" className="group contact">email<span className="tooltip">hello@neyoa.me</span></a> or <span className="group contact">Discord<span className="tooltip">neyoa#1572</span></span>.
+          See my work on <a href="https://github.com/itsneyoa" target="_blank" rel="noreferrer" className="group contact">GitHub<span className="tooltip">itsneyoa</span></a> or contact me via <a href="mailto:lily@neyoa.me" className="group contact">email<span className="tooltip">lily@neyoa.me</span></a> or <span className="group contact">Discord<span className="tooltip">neyoa#1572</span></span>.
         </p>
       </main >
     </div >
