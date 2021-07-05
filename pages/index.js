@@ -42,7 +42,7 @@ export default function Home() {
             <i className="devicon-nextjs-plain" /><span className="tooltip">Next.js</span>
           </span>
           <span className="group icon">
-            <i class="devicon-nginx-plain" /><span className="tooltip">Nginx</span>
+            <i className="devicon-nginx-plain" /><span className="tooltip">Nginx</span>
           </span>
           <span className="group icon">
             <i className="devicon-nodejs-plain" /><span className="tooltip">Node.js</span>
