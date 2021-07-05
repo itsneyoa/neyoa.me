@@ -1,7 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import rainbowcrystalheart from '../public/rainbowcrystalheart.gif'
-import transcrystalheart from '../public/transcrystalheart.gif'
 import Particles from "react-tsparticles";
 import particlesOptions from '../styles/particles.json'
 
@@ -22,7 +19,7 @@ export default function Home() {
         </h1>
 
         <p className="mt-3 text-2xl">
-          <Image src={rainbowcrystalheart} width="20" height="20" alt="Rainbow Crystal Heart" /> Happy pride!!! <Image src={transcrystalheart} width="20" height="20" alt="Trans Flag Crystal Heart" /> {/* if you read this you're a cutie <3 */}
+          bottom text {/* if you read this you're a cutie <3 */}
         </p>
 
         <p className="icons mt-14 text-5xl">
@@ -43,6 +40,9 @@ export default function Home() {
           </span>
           <span className="group icon">
             <i className="devicon-nextjs-plain" /><span className="tooltip">Next.js</span>
+          </span>
+          <span className="group icon">
+            <i class="devicon-nginx-plain" /><span className="tooltip">Nginx</span>
           </span>
           <span className="group icon">
             <i className="devicon-nodejs-plain" /><span className="tooltip">Node.js</span>
