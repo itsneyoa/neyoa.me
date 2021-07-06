@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Particles from "react-tsparticles";
 import particlesOptions from '../styles/particles.json'
+import subtitles from '../styles/subtitles.js'
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         </h1>
 
         <p className="mt-3 text-2xl">
-          bottom text {/* if you read this you're a cutie <3 */}
+          {subtitles[Math.floor(Math.random() * subtitles.length)]}
         </p>
 
         <p className="icons mt-14 text-5xl">
