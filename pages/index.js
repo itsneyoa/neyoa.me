@@ -24,48 +24,32 @@ export default function Home() {
         </p>
 
         <p className="icons mt-14 text-5xl">
-          <span className="group icon">
-            <i className="devicon-apache-plain" /><span className="tooltip">Apache</span>
-          </span >
-          <span className="group icon">
-            <i className="devicon-csharp-line-wordmark" /><span className="tooltip">C#</span>
-          </span>
-          <span className="group icon">
-            <i className="devicon-docker-plain" /><span className="tooltip">Docker</span>
-          </span>
-          <span className="group icon">
-            <i className="devicon-git-plain" /><span className="tooltip">Git</span>
-          </span>
-          <span className="group icon">
-            <i className="devicon-github-original" /><span className="tooltip">GitHub</span>
-          </span>
-          <span className="group icon">
-            <i className="devicon-nextjs-plain" /><span className="tooltip">Next.js</span>
-          </span>
-          <span className="group icon">
-            <i className="devicon-nginx-plain" /><span className="tooltip">Nginx</span>
-          </span>
-          <span className="group icon">
-            <i className="devicon-nodejs-plain" /><span className="tooltip">Node.js</span>
-          </span>
-          <span className="group icon">
-            <i className="devicon-tailwindcss-plain" /><spam className="tooltip">TailwindCSS</spam>
-          </span>
-          <span className="group icon">
-            <i className="devicon-typescript-plain" /><span className="tooltip">TypeScript</span>
-          </span>
-          <span className="group icon">
-            <i className="devicon-javascript-plain" /><span className="tooltip">JavaScript</span>
-          </span>
-          <span className="group icon">
-            <i className="devicon-yarn-plain" /><span className="tooltip">Yarn</span>
-          </span>
-        </p >
+          <Icon name="devicon-apache-plain" tooltip="Apache" />
+          <Icon name="devicon-csharp-line-wordmark" tooltip="C#" />
+          <Icon name="devicon-docker-plain" tooltip="Docker" />
+          <Icon name="devicon-git-plain" tooltip="Git" />
+          <Icon name="devicon-github-original" tooltip="GitHub" />
+          <Icon name="devicon-nextjs-plain" tooltip="Next.js" />
+          <Icon name="devicon-nginx-plain" tooltip="Nginx" />
+          <Icon name="devicon-nodejs-plain" tooltip="NodeJS" />
+          <Icon name="devicon-tailwindcss-plain" tooltip="TailwindCSS" />
+          <Icon name="devicon-typescript-plain" tooltip="TypeScript" />
+          <Icon name="devicon-javascript-plain" tooltip="JavaScript" />
+          <Icon name="devicon-yarn-plain" tooltip="Yarn" />
+        </p>
 
         <p className="mt-14 text-2xl">
           See my work on <a href="https://github.com/itsneyoa" target="_blank" rel="noreferrer" className="group contact">GitHub<span className="tooltip">itsneyoa</span></a> or contact me via <a href="mailto:lily@neyoa.me" className="group contact">email<span className="tooltip">lily@neyoa.me</span></a> or <span className="group contact">Discord<span className="tooltip">neyoa#1572</span></span>.
         </p>
       </main >
     </div >
+  )
+}
+
+function Icon(props) {
+  return (
+    <span className="group icon">
+      <i className={props.name} /><span className="tooltip">{props.tooltip}</span>
+    </span>
   )
 }
