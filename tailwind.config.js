@@ -6,32 +6,32 @@ module.exports = {
     extend: {
       colors: {
         light: {
-          'text': '#23272a',
-          'background': '#ffffff',
+          text: '#23272a',
+          background: '#ffffff',
           'tooltip-background': '#efefef',
         },
         dark: {
-          'text': '#eaeaea',
-          'background': '#23272a',
+          text: '#eaeaea',
+          background: '#23272a',
           'tooltip-background': '#2c2f33',
         },
         contact: {
-          'start': '#4ade80',
-          'end': '#06b6d4',
+          start: '#4ade80',
+          end: '#06b6d4',
         },
-        'primary': '#f53678',
-        'secondary': '#0fc0fc',
+        primary: '#f53678',
+        secondary: '#0fc0fc',
         'tooltip-background': '#50e3c2',
-        'transparent': 'transparent',
+        transparent: 'transparent',
       },
       inset: {
-        'tooltip': '120%'
+        tooltip: '120%',
       },
       transitionDuration: {
-        '1500': '1.5s'
+        1500: '1.5s',
       },
       fontSize: {
-        'large': '16rem',
+        large: '16rem',
       },
     },
   },

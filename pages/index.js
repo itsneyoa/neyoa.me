@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import Particles from "react-tsparticles";
+import Particles from 'react-tsparticles'
 import particlesOptions from '../styles/particles.json'
 import subtitles from '../styles/subtitles.js'
 
 export default function Home() {
   return (
-    <div id="container" onContextMenu={(e) => e.preventDefault()}>
+    <div id="container" onContextMenu={e => e.preventDefault()}>
       <Head>
         <title>neyoa</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"></link>
@@ -19,9 +19,7 @@ export default function Home() {
           Hi! I'm <span className="text-primary hover:text-secondary duration-1500">Lily</span>
         </h1>
 
-        <p className="mt-3 text-2xl">
-          {subtitles[Math.floor(Math.random() * subtitles.length)]}
-        </p>
+        <p className="mt-3 text-2xl">{subtitles[Math.floor(Math.random() * subtitles.length)]}</p>
 
         <p className="icons mt-14 text-5xl">
           <Icon name="devicon-apache-plain" tooltip="Apache" />
@@ -39,17 +37,30 @@ export default function Home() {
         </p>
 
         <p className="mt-14 text-2xl">
-          See my work on <a href="https://github.com/itsneyoa" target="_blank" rel="noreferrer" className="group contact">GitHub<span className="tooltip">itsneyoa</span></a> or contact me via <a href="mailto:lily@neyoa.me" className="group contact">email<span className="tooltip">lily@neyoa.me</span></a> or <span className="group contact">Discord<span className="tooltip">neyoa#1572</span></span>.
+          See my work on{' '}
+          <a href="https://github.com/itsneyoa" target="_blank" rel="noreferrer" className="group contact">
+            GitHub<span className="tooltip">itsneyoa</span>
+          </a>{' '}
+          or contact me via{' '}
+          <a href="mailto:lily@neyoa.me" className="group contact">
+            email<span className="tooltip">lily@neyoa.me</span>
+          </a>{' '}
+          or{' '}
+          <span className="group contact">
+            Discord<span className="tooltip">neyoa#1572</span>
+          </span>
+          .
         </p>
-      </main >
-    </div >
+      </main>
+    </div>
   )
 }
 
 function Icon(props) {
   return (
     <span className="group icon">
-      <i className={props.name} /><span className="tooltip">{props.tooltip}</span>
+      <i className={props.name} />
+      <span className="tooltip">{props.tooltip}</span>
     </span>
   )
 }
