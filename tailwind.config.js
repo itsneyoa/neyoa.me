@@ -30,9 +30,6 @@ module.exports = {
       transitionDuration: {
         1500: '1.5s',
       },
-      fontSize: {
-        large: '16rem',
-      },
     },
   },
   variants: {

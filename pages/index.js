@@ -5,14 +5,14 @@ import subtitles from '../styles/subtitles.js'
 
 export default function Home() {
   return (
-    <div id="container" onContextMenu={e => e.preventDefault()}>
+    <container onContextMenu={e => e.preventDefault()}>
       <Head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"></link>
       </Head>
 
       <Particles options={particlesOptions} className="z-10" />
 
-      <main id="main">
+      <main>
         <h1 className="text-6xl font-bold leading-tight">
           Hi! I'm <span className="text-primary hover:text-secondary duration-1500">Lily</span>
         </h1>
@@ -50,7 +50,7 @@ export default function Home() {
           .
         </p>
       </main>
-    </div>
+    </container>
   )
 }
 

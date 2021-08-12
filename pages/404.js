@@ -1,10 +1,18 @@
 export default function Custom404() {
   return (
-    <div id="container" onContextMenu={e => e.preventDefault()}>
-      <main id="main">
-        <h1 className="text-large font-bold leading-tight bg-gradient-to-br bg-clip-text text-transparentfrom-purple-700 to-pink-600">404</h1>
-        <h2 className="text-3xl font-semibold bg-gradient-to-br bg-clip-text text-transparent from-purple-700 to-pink-600">Page not found!</h2>
+    <container className="bg-gradient-to-tr from-primary to-secondary" onContextMenu={e => e.preventDefault()}>
+      <main className="text-dark-text">
+        <h1 className="font-black text-9xl opacity-70">404</h1>
+        <h2 className="font-semibold text-5xl opacity-50 p-10">Page not found</h2>
+        <div className="grid grid-cols-2">
+          <a href={'https://neyoa.me'}>
+            <div className="from-red-500 to-yellow-400 buttonTilt">Home</div>
+          </a>
+          <a href={'https://bio.link/neyoa'}>
+            <div className="from-purple-600 to-primary buttonTilt">Contact me </div>
+          </a>
+        </div>
       </main>
-    </div>
+    </container>
   )
 }

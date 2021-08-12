@@ -2,15 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  container {
+    @apply grid place-content-center min-h-screen py-2 bg-light-background dark:bg-dark-background z-0 select-none relative;
+  }
+
+  main {
+    @apply grid place-content-center w-full px-20 text-center text-light-text dark:text-dark-text z-20;
+  }
+}
+
 @layer components {
-  #container {
-    @apply grid place-content-center min-h-screen py-2 bg-light-background dark:bg-dark-background z-0 select-none;
-  }
-
-  #main {
-    @apply w-full flex-1 px-20 text-center text-light-text dark:text-dark-text z-20;
-  }
-
   .icons {
     @apply flex flex-row flex-wrap justify-center gap-10;
   }
@@ -25,5 +27,11 @@
 
   .tooltip {
     @apply invisible opacity-0 bg-light-tooltip-background dark:bg-dark-tooltip-background text-light-text dark:text-dark-text rounded-lg text-center text-lg px-2 py-1 w-auto absolute bottom-tooltip group-hover:opacity-100 group-hover:visible duration-500 hover:bg-tooltip-background hover:text-dark-tooltip-background;
+  }
+}
+
+@layer utilities {
+  .buttonTilt {
+    @apply bg-gradient-to-tr font-semibold px-6 py-3 rounded-md mr-6 hover:scale-105 duration-75;
   }
 }
