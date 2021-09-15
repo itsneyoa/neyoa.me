@@ -1,28 +1,24 @@
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: 'media',
   theme: {
     extend: {
       colors: {
         light: {
           text: '#23272a',
           background: '#ffffff',
-          'tooltip-background': '#efefef',
+          tooltip: '#efefef',
         },
         dark: {
           text: '#eaeaea',
           background: '#23272a',
-          'tooltip-background': '#2c2f33',
+          tooltip: '#2c2f33',
         },
-        contact: {
-          start: '#4ade80',
-          end: '#06b6d4',
-        },
+        contact: '#4ade80',
         primary: '#f53678',
         secondary: '#0fc0fc',
-        'tooltip-background': '#50e3c2',
-        transparent: 'transparent',
+        tooltip: '#50e3c2',
       },
       inset: {
         tooltip: '120%',

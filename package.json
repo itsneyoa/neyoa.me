@@ -1,7 +1,7 @@
 {
-  "name": "neyoa.me-next",
-  "version": "0.1.0",
-  "private": true,
+  "name": "neyoa.me",
+  "version": "2.0.0",
+  "license": "CC-BY-ND-3.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -16,12 +16,14 @@
     "react-tsparticles": "^1.28.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
+    "@types/react": "^17.0.21",
+    "autoprefixer": "^10.3.4",
     "eslint": "7.28.0",
     "eslint-config-next": "11.0.0",
-    "postcss": "^8.3.5",
+    "postcss": "^8.3.6",
     "prettier": "^2.3.2",
-    "tailwindcss": "^2.2.2"
+    "tailwindcss": "^2.2.15",
+    "typescript": "^4.4.3"
   },
   "prettier": {
     "trailingComma": "es5",

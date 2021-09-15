@@ -1,7 +1,8 @@
+import { AppProps } from 'next/dist/next-server/lib/router/router'
 import Head from 'next/head'
-import '../styles/globals.css'
+import 'tailwindcss/tailwind.css'
 
-function MyApp({ Component, pageProps }) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -20,9 +21,8 @@ function MyApp({ Component, pageProps }) {
 
         <meta name="theme-color" content="#f53678" />
       </Head>
+
       <Component {...pageProps} />
     </>
   )
 }
-
-export default MyApp
