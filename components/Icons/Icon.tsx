@@ -1,5 +1,4 @@
-import { ReactFragment } from 'react'
-import Tooltip from './Tooltip'
+import Tooltip from '../Misc/Tooltip'
 
 export default function Icon({ icon, name }: { icon: string; name: string }) {
   return (
