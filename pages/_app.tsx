@@ -1,10 +1,12 @@
+import 'tailwindcss/tailwind.css'
+
 import { AppProps } from 'next/dist/next-server/lib/router/router'
 import Head from 'next/head'
-import 'tailwindcss/tailwind.css'
+import { ThemeProvider } from 'next-themes'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <ThemeProvider attribute="class">
       <Head>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -23,6 +25,6 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   )
 }
